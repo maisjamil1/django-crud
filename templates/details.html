@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>details</h1>
+{% endblock header %}
+
+{% block content %}
+  <ul>
+    <li>{{ post.title }}</li>
+    <li>{{ post.author }}</li>
+    <li><p>{{ post.body }}</p></li>
+
+
+  </ul>
+{% endblock content %}

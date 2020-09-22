@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>home page</h1>
+{% endblock header %}
+
+
+{% block content %}
+<ul>
+    {% for post in object_list%}
+    <a href="{%url 'post_details' post.pk %}">{{post.title}}</a>
+
+    <br>
+{% endfor %}
+</ul>
+{% endblock content %}
