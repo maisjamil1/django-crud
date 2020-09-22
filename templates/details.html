@@ -8,6 +8,8 @@
     <li>{{ post.title }}</li>
     <li>{{ post.author }}</li>
     <li><p>{{ post.body }}</p></li>
+    <a href="{%url 'post_update' post.pk %}">update</a>
+    <a href="{%url 'post_delete' post.pk %}">delete</a>
 
 
   </ul>
